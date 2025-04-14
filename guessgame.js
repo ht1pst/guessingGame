@@ -49,34 +49,34 @@ function checkNumber2() {
     }
 }
 //No.2
-let randomNumber3 = Math.floor(Math.random() * 20) + 1;
-let attempts = 5
-function checkNumber3() {
-    let userGuess = parseInt(document.getElementById('guessInput').value);
-    let result = document.getElementById('result');
-    let attemptsLeft = document.getElementById('attemptsLeft');
+// let randomNumber3 = Math.floor(Math.random() * 20) + 1;
+// let attempts = 5
+// function checkNumber3() {
+//     let userGuess = parseInt(document.getElementById('guessInput').value);
+//     let result = document.getElementById('result');
+//     let attemptsLeft = document.getElementById('attemptsLeft');
     
-    if(attemptsLeft > 1){
-        if(userGuess === randomNumber3){
-            result.textContent = 'Correct';
-            attempts = 0;
-        }
-        else if (userGuess > randomNumber3){
-            result.textContent = 'Too high';
+//     if(attemptsLeft > 1){
+//         if(userGuess === randomNumber3){
+//             result.textContent = 'Correct';
+//             attempts = 0;
+//         }
+//         else if (userGuess > randomNumber3){
+//             result.textContent = 'Too high';
            
-        }
-        else{
-            result.textContent = 'Too low';
-        }
-        attemptsLeft--;
-        attemptsText.textContent = "Attempts left: " + attemptsLeft;
-    }
-    else{
-        result.textContent = `Game over! The correct number was ${randomNumber3}.`;
-        attemptsLeft.textContent = "";
+//         }
+//         else{
+//             result.textContent = 'Too low';
+//         }
+//         attemptsLeft--;
+//         attemptsText.textContent = "Attempts left: " + attemptsLeft;
+//     }
+//     else{
+//         result.textContent = `Game over! The correct number was ${randomNumber3}.`;
+//         attemptsLeft.textContent = "";
 
-    }
-}
+//     }
+// }
 const words2 = ["tiger", "eagle", "horse", "zebra", "panda"];
 
 let randomWord2 = words2[Math.floor(Math.random() * words2.length)];
